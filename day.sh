@@ -11,13 +11,13 @@ echo 'fn main() {' >> src/main.rs
 echo '    let input = std::fs::read_to_string("input.txt").unwrap();' >> src/main.rs
 echo '    let input = common::parse(&input);' >> src/main.rs
 echo '' >> src/main.rs
-echo '    println!("Part 1: {}", part1::solve(&input));' >> src/main.rs
-echo '    println!("Part 2: {}", part2::solve(&input));' >> src/main.rs
+echo '    println!("Part 1: {}", part1::solve(input.clone()));' >> src/main.rs
+echo '    println!("Part 2: {}", part2::solve(input));' >> src/main.rs
 echo '}' >> src/main.rs
 
 echo 'use crate::common::*;' >| src/part1.rs
 echo '' >> src/part1.rs
-echo "pub fn solve(input: &Input<'_>) -> isize {" >> src/part1.rs
+echo "pub fn solve(input: Input<'_>) -> isize {" >> src/part1.rs
 echo '    todo!();' >> src/part1.rs
 echo '}' >> src/part1.rs
 

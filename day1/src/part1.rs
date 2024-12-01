@@ -1,7 +1,7 @@
 use crate::common::*;
 
-pub fn solve(input: &str) -> isize {
-    let (mut l, mut r) = parse(input);
+pub fn solve(input: Input<'_>) -> isize {
+    let (mut l, mut r) = input.clone();
 
     l.sort_unstable();
     r.sort_unstable();
