@@ -17,7 +17,7 @@ echo '}' >> src/main.rs
 
 echo 'use crate::common::*;' >| src/part1.rs
 echo '' >> src/part1.rs
-echo "pub fn solve(input: Input<'_>) -> isize {" >> src/part1.rs
+echo "pub fn solve(input: Input<'_>) -> usize {" >> src/part1.rs
 echo '    todo!();' >> src/part1.rs
 echo '}' >> src/part1.rs
 
