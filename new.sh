@@ -29,4 +29,4 @@ echo "pub fn parse<'a>(input: &'a str) -> Input<'a> {" >> src/common.rs
 echo '    input' >> src/common.rs
 echo '}' >> src/common.rs
 
-nvim input.txt src/part1.rs src/common.rs src/part2.rs
+nvim input.txt src/common.rs src/part1.rs src/part2.rs
